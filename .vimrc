@@ -7,11 +7,30 @@
 "
 " Requirements:
 "   vim (https://www.vim.org/)
+"   curl (https://curl.se/)
+
+" Auto-install vim-plug
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
+" Auto-install plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
+
+call plug#begin()
+
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+
+call plug#end()
 
 set encoding=UTF-8
 set termguicolors
 
 syntax on
+colorscheme catppuccin_mocha
 set background=dark
 
 set expandtab
