@@ -28,6 +28,12 @@ Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'vim-airline/vim-airline'
 Plug 'bling/vim-bufferline'
 
+Plug 'scrooloose/nerdtree'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+" This must load last
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 set encoding=UTF-8
@@ -53,3 +59,11 @@ nnoremap<C-h> <C-w>h
 nnoremap<C-j> <C-w>j
 nnoremap<C-k> <C-w>k
 nnoremap<C-l> <C-w>l
+
+nnoremap<C-n> :NERDTreeToggle<CR>
+let NERDTreeNaturalSort=1
+let NERDTreeShowHidden=1
+let NERDTreeMinimalUI=1
+
+let NERDTreeIgnore=[
+    \ '\.git$', ]
