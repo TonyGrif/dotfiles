@@ -8,6 +8,7 @@
 " Requirements:
 "   vim (https://www.vim.org/)
 "   curl (https://curl.se/)
+"   nerd font (https://www.nerdfonts.com/)
 
 " Auto-install vim-plug
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -23,6 +24,9 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 call plug#begin()
 
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+
+Plug 'vim-airline/vim-airline'
+Plug 'bling/vim-bufferline'
 
 call plug#end()
 
