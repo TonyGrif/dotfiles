@@ -79,6 +79,8 @@ autocmd VimEnter *
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprev<CR>
 
+nnoremap <leader>q :bp<bar>sp<bar>bn<bar>bd<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NerdTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
