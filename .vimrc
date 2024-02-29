@@ -43,6 +43,7 @@ set encoding=UTF-8
 set termguicolors
 set expandtab
 set tabstop=4
+set shiftwidth=4
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Theme
