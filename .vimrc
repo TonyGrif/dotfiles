@@ -60,6 +60,14 @@ nnoremap<C-j> <C-w>j
 nnoremap<C-k> <C-w>k
 nnoremap<C-l> <C-w>l
 
+let g:bufferline_echo=0
+autocmd VimEnter *
+  \ let &statusline='%{bufferline#refresh_status()}'
+    \ .bufferline#get_status_string()
+
+nnoremap <TAB> :bnext<CR>
+nnoremap <S-TAB> :bprev<CR>
+
 nnoremap<C-n> :NERDTreeToggle<CR>
 let NERDTreeNaturalSort=1
 let NERDTreeShowHidden=1
