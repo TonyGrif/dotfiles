@@ -36,16 +36,24 @@ Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim General Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set encoding=UTF-8
 set termguicolors
+set expandtab
+set tabstop=4
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Theme
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
 colorscheme catppuccin_mocha
 set background=dark
 
-set expandtab
-set tabstop=4
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
@@ -60,6 +68,9 @@ nnoremap<C-j> <C-w>j
 nnoremap<C-k> <C-w>k
 nnoremap<C-l> <C-w>l
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Buffers
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:bufferline_echo=0
 autocmd VimEnter *
   \ let &statusline='%{bufferline#refresh_status()}'
@@ -68,6 +79,9 @@ autocmd VimEnter *
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprev<CR>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NerdTree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap<C-n> :NERDTreeToggle<CR>
 let NERDTreeNaturalSort=1
 let NERDTreeShowHidden=1
