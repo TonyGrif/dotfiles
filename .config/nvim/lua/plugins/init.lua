@@ -9,9 +9,13 @@ if vim.fn.has("nvim-0.8.0") == 0 then
 end
 
 return {
-  { "folke/lazy.nvim", version = "*" },
   {
     "catppuccin/nvim",
     name = "catppuccin",
+    priority = 1000,
+    lazy = false,
+    config = function()
+      vim.cmd([[colorscheme catppuccin]])
+    end,
   },
 }
