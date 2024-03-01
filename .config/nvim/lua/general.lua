@@ -17,3 +17,8 @@ vim.opt.smartindent = true
 -- ]]
 vim.opt.number = true
 vim.opt.relativenumber = true
+
+-- [[
+-- Colorscheme
+-- ]]
+vim.cmd.colorscheme "catppuccin"

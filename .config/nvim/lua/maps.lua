@@ -1,9 +1,4 @@
 -- [[
--- Leader
--- ]]
-vim.g.mapleader = " "
-
--- [[
 -- Normal Mode
 -- ]]
 vim.keymap.set("n", "<leader>rn", ":set relativenumber<CR>")
