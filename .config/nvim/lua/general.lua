@@ -5,6 +5,8 @@ vim.opt.termguicolors = true
 -- vim.opt.clipboard = "unnamedplus"
 vim.opt.showmode = false
 
+vim.g.loaded_python3_provider = 0
+
 -- [[
 -- Indenting
 -- ]]
