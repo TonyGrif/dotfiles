@@ -25,7 +25,25 @@ return {
         sections = {
           lualine_a = {'mode'},
           lualine_b = {'branch', 'diff', 'diagnostics'},
-          lualine_c = {'filename'},
+          lualine_c = {
+            {
+              'buffers',
+              show_filename_only = true,
+              hide_filename_extension = false,
+              show_modified_status = true,
+
+              use_mode_colors = false,
+              buffers_colors = {
+                active = "lualine_{section}_normal",
+                inactive = "lualine_{section}_inactive",
+              },
+              symbols = {
+                modified = ' ●',
+                alternate_file = "",
+                directory =  '',
+              },
+            },
+          },
           lualine_x = {'encoding', 'fileformat', 'filetype'},
           lualine_y = {'progress'},
           lualine_z = {'location'},
@@ -33,7 +51,7 @@ return {
         inactive_sections = {
           lualine_a = {},
           lualine_b = {},
-          lualine_c = {'filename'},
+          lualine_c = {},
           lualine_x = {'location'},
           lualine_y = {},
           lualine_z = {},
