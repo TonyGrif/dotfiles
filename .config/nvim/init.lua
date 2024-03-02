@@ -6,6 +6,7 @@
 --
 -- Requirements:
 -- 	neovim (https://neovim.io/)
+-- 	ripgrep (https://github.com/BurntSushi/ripgrep)
 
 vim.g.mapleader = " "
 
