@@ -11,6 +11,7 @@ return {
       require("neo-tree").setup({
         close_if_last_window = true,
         popup_border_style = "rounded",
+        enabled_git_status = true,
         window = {
           mappings = {
             ["h"] = "open_split",
