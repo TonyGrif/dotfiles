@@ -7,6 +7,8 @@
 -- Requirements:
 -- 	neovim (https://neovim.io/)
 -- 	ripgrep (https://github.com/BurntSushi/ripgrep)
+-- Optional:
+--  npm (https://www.npmjs.com/)
 
 vim.g.mapleader = " "
 
