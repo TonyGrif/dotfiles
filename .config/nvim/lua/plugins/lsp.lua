@@ -8,8 +8,20 @@ return {
     require("mason").setup()
     require("mason-lspconfig").setup {
       ensure_installed = {
+        "pylsp",
         "pyright",
         "lua_ls",
+      },
+    }
+    require("lspconfig").pylsp.setup {
+      settings = {
+        pylsp = {
+          plugins = {
+            pycodestyle = {
+              maxLineLength = 100
+            }
+          },
+        },
       },
     }
     require("lspconfig").pyright.setup {
