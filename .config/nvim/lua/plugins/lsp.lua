@@ -11,6 +11,7 @@ return {
         "pylsp",
         "pyright",
         "lua_ls",
+        "bashls",
       },
     }
     require("lspconfig").pylsp.setup {
@@ -36,6 +37,9 @@ return {
           },
         },
       },
+    }
+    require("lspconfig").bashls.setup {
+      --
     }
   end
 }
